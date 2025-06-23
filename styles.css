@@ -1,0 +1,809 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #F9F9F9;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95px;
+}
+
+.nav-content {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 88%;
+    justify-content: space-between;
+    height: 38px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 38px;
+}
+
+.menuimg {
+    display: none;
+}
+
+.logoimg {
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+.Buttons {
+    height: 25px;
+    gap: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Link Styles */
+a {
+    font-size: 18px;
+    color: #666666;
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a:hover {
+    color: #438DB8;
+    cursor: pointer;
+    animation-name: textcolour;
+    animation-duration: 10s;
+}
+
+/* Right-side of Navbar */
+.right-side {
+    display: flex;
+    flex-direction: row;
+    width: 254px;
+    justify-content: space-between;
+}
+
+/* Input Field Styles */
+.inputfieldcontainor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 158px;
+    height: 38px;
+    border: 1.5px solid #B4B4B4;
+    border-radius: 4px;
+}
+
+.inputfields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    gap: 8px;
+}
+
+.inputfields input {
+    border: none;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    width: 111px;
+    height: 24px;
+}
+
+.inputfields input:focus {
+    outline: none;
+}
+
+.inputfields img,
+.userimage {
+    width: 15px;
+    height: 15px;
+}
+
+.loginfield {
+    width: 111px;
+    height: 24px;
+}
+
+/* Button Styles */
+.cartbtn,
+.screachbtn {
+    width: 39px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border: 1.5px solid #B4B4B4;
+    border-radius: 4px;
+}
+
+/* Full Width Image Banner */
+.large-banner-image {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+}
+
+.large-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.large-banner-image p {
+    position: absolute;
+    top: 51px;
+    left: 10%;
+    width: 75%;
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Product Section 1 */
+.products-section1 {
+    width: 88%;
+    height: 296px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: auto;
+}
+
+.information {
+    width: 198px;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h2 {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 700;
+}
+
+.information p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5F5F5F;
+}
+
+.productbtn {
+    width: 100%;
+    height: 36px;
+    background-color: #438DB8;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    padding: 12px;
+    text-align: start;
+    border: none;
+}
+
+/* Horizontal Scroll Products */
+.products-container1 {
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    height: 236px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: end;
+    gap: 10px;
+    width: 88%;
+    margin: auto;
+}
+
+.grid-item {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.item1, .item2, .item3 {
+    grid-column: span 4;
+}
+
+.item4, .item5 {
+    grid-column: span 6;
+}
+
+/* Product Section 2 */
+.products-section2 {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    align-self: center;
+    width: 350px;
+    color: #333;
+}
+
+/* Product Grid */
+.products-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 214px;
+    max-width: 214px;
+    height: 214px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 200px;
+    height: 167px;
+    border-radius: 8px;
+}
+
+.product-name {
+    width: 200px;
+    height: 15px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 5px 0 0;
+    color: #3E3E3E;
+}
+
+.product-price-with-cartbtn {
+    width: 200px;
+    height: 24px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price {
+    color: #3E3E3E;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 5px 0;
+}
+.Addcartbtn{
+    width:24px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #438DB8;
+}
+.Addcartbtn img{
+
+   width:10px;
+    height: 10px;
+}
+/*  Promotional Banner Section */
+.promotional-banner-section {
+    width: 88%;
+    position: relative;
+    height: 345px;
+    margin: auto;
+}
+
+.promotional-banner-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.fronttext {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    background-color: #00000040;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    width: 258px;
+    height: 264px;
+}
+
+.fronttext p {
+    font-family: 'Montserrat';
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+}
+
+.fronttext button {
+    width: 151px;
+    height: 36px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: auto;
+}
+
+/* Features Section */
+.features-containor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 88%;
+    flex-wrap: wrap;
+    margin: auto;
+    border-bottom: 1px solid #00000026;
+    border-radius: 8px;
+}
+
+.features-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 220px;
+    height: 79px;
+}
+
+.features-item1-image,
+.features-item2-image,
+.features-item3-image,
+.features-item4-image {
+    width: 50px;
+    height: 100%;
+    margin-top: 8px;
+}
+
+.features-item2-image {
+    margin-top: 15px;
+}
+
+.features-item1-image img {
+    padding-top: 8.33px;
+    padding-left: 8.33px;
+    width: 33.33px;
+    height: 33.33px;
+}
+
+.features-item2-image img {
+    width: 50px;
+    height: 40px;
+}
+
+.features-item3-image img {
+    padding-top: 4.17px;
+    padding-left: 6.25px;
+    width: 37.9px;
+    height: 39.58px;
+}
+
+.features-item4-image img {
+    width: 50px;
+    height: 50px;
+}
+
+.features-items-data {
+    width: 220px;
+    height: 79px;
+}
+
+.features-items-data h4 {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin: 10px 0 6px;
+    font-weight: 700;
+}
+
+.features-items-data p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Footer Section */
+.footer-containor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 88%;
+    gap: 10px;
+    padding: 16px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 16px 0;
+}
+
+.footer-items h3 {
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin: 5px 0 25px;
+}
+
+.footer-items p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+/* Social Media Icons */
+.follow-us-containor {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    gap: 10px;
+}
+
+.follow-us-containor p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.image-holder {
+    width: 200px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image1, .image2, .image3, .image4 {
+    width: 36px;
+    height: 36px;
+}
+
+.image1 img {
+    padding: 11.08px 0 0 11.08px;
+    width: 17.31px;
+    height: 14.06px;
+}
+
+.image2 img {
+    padding: 9.26px 0 0 13.53px;
+    width: 9.53px;
+    height: 17.8px;
+}
+
+.image3 img {
+    padding: 4.15px 0 0 11.08px;
+    width: 15.92px;
+    height: 19.38px;
+}
+
+.image4 img {
+    padding: 10.38px 0 0 10.38px;
+    width: 15.15px;
+    height: 15.15px;
+}
+/* Styles for screen size up to 1024px */
+@media screen and (max-width:1024px) {
+    .Buttons {
+        display: none;
+    }
+
+    .menuimg {
+        display: unset;
+    }
+
+    .large-banner-image {
+        width: 100%;
+        height: 88vh;
+    }
+
+    .large-banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .large-banner-image p {
+        top: 22px;
+        font-size: 36px;
+    }
+
+    .products-section1 {
+        width: 76%;
+    }
+
+    .products-container1 {
+        width: 55%;
+    }
+
+    .grid-container {
+        max-width: 76%;
+    }
+
+    .products-section2 {
+        justify-self: center;
+        align-items: center;
+        margin: 0px;
+        max-width: 100vw;
+        min-width: 100vw;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .products-container2 {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: flex-start;
+        width: 53%;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 0 16px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-card {
+        flex: 0 0 40%;
+        scroll-snap-align: start;
+    }
+
+    .promotional-banner-section {
+        width: 76%;
+        height: 293px;
+        margin: 0 auto;
+    }
+
+    .promotional-banner-section img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fronttext {
+        left: 25%;
+        padding: 40px;
+        width: 258px;
+        height: 214px;
+    }
+
+    .features-containor {
+        width: 76%;
+    }
+
+    .features-items {
+        width: 270px;
+    }
+
+    .footer-containor {
+        width: 76%;
+    }
+
+    .footer-items,
+    .footer-items h3,
+    .footer-items p,
+    .follow-us-containor,
+    .follow-us-containor p,
+    .image-holder {
+        width: 254px;
+    }
+}
+
+/* Styles for screen size up to 710px */
+@media screen and (max-width:710px) {
+    .features-items {
+        width: 220px;
+    }
+
+    .footer-items,
+    .footer-items h3,
+    .footer-items p,
+    .follow-us-containor,
+    .follow-us-containor p,
+    .image-holder {
+        width: 200px;
+    }
+}
+
+/* Styles for screen size up to 600px */
+@media screen and (max-width:600px) {
+    .Buttons {
+        display: none;
+    }
+
+    .menuimg {
+        display: unset;
+    }
+
+    .navbar {
+        height: 150px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        width: 85%;
+        height: 102px;
+        gap: 32px;
+    }
+
+    .large-banner-image {
+        justify-self: center;
+        width: 98%;
+        height: 81vh;
+    }
+
+    .large-banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .large-banner-image p {
+        top: 33px;
+        left: 5%;
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .products-section1 {
+        width: 295px;
+        height: 482px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        justify-content: start;
+        align-items: unset;
+        align-self: center;
+        margin: auto;
+    }
+
+    .products-container1 {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 30px;
+        width: 296px;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5 {
+        grid-column: span 1;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 152px;
+    }
+
+    .products-section2 {
+        justify-self: center;
+        align-items: center;
+        margin: 0px;
+        max-width: 100vw;
+        min-width: 100vw;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .products-container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        width: 195px;
+        gap: 16px;
+        padding: 0 16px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-card {
+        flex: 0 0 100px;
+        scroll-snap-align: start;
+    }
+
+    .promotional-banner-section {
+        width: 100%;
+        height: 233px;
+    }
+
+    .promotional-banner-section img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fronttext {
+        left: 20%;
+        padding: 30px;
+        width: 190px;
+        height: 174px;
+    }
+
+    .fronttext p {
+        font-size: 20px;
+    }
+
+    .features-containor {
+        justify-content: center;
+        width: 296px;
+    }
+
+    .footer-containor {
+        justify-content: center;
+        padding: 16px 0px 16px;
+        width: 296px;
+    }
+}
